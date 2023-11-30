@@ -1,0 +1,178 @@
+
+
+  article, nav, div {
+    padding: 1.2em;
+  }
+
+  #mainArticle { 
+    grid-area: article;      
+  }
+
+
+  /* Stack the layout on small devices/viewports. */
+  @media all and (max-width: 575px) {
+    body { 
+      grid-template-areas: 
+        "article"
+        "nav";
+      grid-template-rows: 80px 1fr 70px 1fr 70px;  
+      grid-template-columns: 1fr;
+   }
+  }
+  
+  .wrapper {
+    overflow: hidden;
+  }
+  
+  .wrapper div {
+      padding: 10px;
+  }
+
+  .user-input-wrp {
+    float:left; 
+    margin-right:20px;
+    position: relative;
+    width: 40%;
+  }
+
+  .user-input-wrp .inputText{
+    width: 100%;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #777;
+      box-shadow: none !important;
+  }
+
+  .user-input-wrp .inputText:focus{
+    border-color: #9F7841;
+    border-width: medium medium 2px;
+  }
+
+  .user-input-wrp .floating-label {
+    position: absolute;
+    pointer-events: none;
+    top: 18px;
+    left: 10px;
+    transition: 0.2s ease all;
+  }
+
+  .user-input-wrp input:focus ~ .floating-label,
+  .user-input-wrp input:not(:focus):valid ~ .floating-label{
+    top: 0px;
+    left: 10px;
+    font-size: 13px;
+    opacity: 1;
+  }
+
+.tg {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color:#9ABAD9;
+    margin:0px auto;
+  }
+
+.tg td{
+    font-size:14px;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:#000000;
+    color:#444;
+    text-align:center;
+    vertical-align:top;
+  }
+
+.tg th{
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:#000000;
+    color:#fff;
+    background-color:#9F7841;
+  }
+
+.tg .tg-fovp{
+    font-weight:bold;
+    font-size:12px;
+    text-align:center;
+    vertical-align:top;
+  }
+
+@media screen and (max-width: 767px) {
+  .tg {
+    width: auto !important;
+  }
+  .tg col {
+    width: auto !important;
+  }
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto 0px;
+  }
+}
+
+.divToken {
+  height: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size:14px;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:auto; 
+  word-break:normal;
+  border-color:#9F7841;
+  color:#444;
+  background-color:#e2e1ba;
+  text-align: center;
+}
+
+.btn{
+  border:3px solid #b37621;
+  background:#fff;
+  padding: 8px 15px;
+  font-size:14px;
+  margin: 5px;
+}
+  
+.btn span{
+  font-size:10px;
+  padding-left:5px;
+}
+
+.red {
+  color: #6e0000;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
+
+.cellHighlight {
+  background-color: #9F7841;
+}
+
+.cell {
+  background-color: #e2e1ba;
+}
+
+.row {
+  background-color:#e2e1ba;
+}
+
+.rowHighlight {
+  background-color: #7F7B6B;
+}
